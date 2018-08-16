@@ -14,6 +14,18 @@
             top:30%;
             -webkit-animation: movingclouds 500s linear infinite;
             background-repeat: repeat-x;
+            z-index: -4
+
+        }
+        .clouds-2{
+            background: url(src/clouds4.png);
+            width: 200%;
+            height: 200px;
+            position: absolute;
+            top:40%;
+            -webkit-animation: movingclouds 500s linear infinite;
+            background-repeat: repeat-x;
+            z-index: -2
 
         }
         @keyframes movingclouds {
@@ -30,6 +42,7 @@
             height: 210px;
             position: absolute;
             top:36%;
+            z-index: -3
         }
         .moutain-2{
             background: url(src/moutains.png);
@@ -37,6 +50,7 @@
             height: 280px;
             position: absolute;
             top:41%;
+            z-index: -2
         }
         .fields-1 {
             background: url(src/bg-fields.png);
@@ -50,6 +64,7 @@
             position: absolute;
             height: 350px;
             width: 100%;
+            z-index: -1;
         }
         .sea{
             background: url(src/water.png);
@@ -57,7 +72,7 @@
             position: absolute;
             height: 440px;
             bottom: 0px;
-            z-index: -1;
+            z-index: -5;
         }
         footer{
             background: url(src/SpringValley.foot.3.0.png);
@@ -67,6 +82,7 @@
             position: absolute;
             background-repeat: repeat-x;
             bottom: 0px;
+            z-index: 0;
         }
         footer p {
             margin-top: 170px;
@@ -81,6 +97,7 @@
 <body>
     <div class="backgound">
         <div class="clouds"></div>
+        <div class="clouds-2"></div>
         <div class="moutains"></div>
         <div class="moutain-2"></div>
         <div class="sea"></div>
