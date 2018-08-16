@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <style>
+        .clouds{
+            background: url(src/clouds2.png);
+            width: 200%;
+            height: 200px;
+            position: absolute;
+            top:30%;
+            -webkit-animation: movingclouds 500s linear infinite;
+            background-repeat: repeat-x;
+
+        }
+        @keyframes movingclouds {
+            0% {
+                left: 0
+              }
+            100% {
+                left: -200%
+              }
+        }
+        .moutains{
+            background: url(src/back.6.png);
+            width: 100%;
+            height: 210px;
+            position: absolute;
+            top:36%;
+        }
+        .moutain-2{
+            background: url(src/moutains.png);
+            width: 100%;
+            height: 280px;
+            position: absolute;
+            top:41%;
+        }
+        .fields-1 {
+            background: url(src/bg-fields.png);
+            width: 100%;
+            float: left;
+            height: 100%;
+        }
+    
+        .fields-area{
+            top: 45%;
+            position: absolute;
+            height: 350px;
+            width: 100%;
+        }
+        .sea{
+            background: url(src/water.png);
+            width: 100%;
+            position: absolute;
+            height: 440px;
+            bottom: 0px;
+            z-index: -1;
+        }
+        footer{
+            background: url(src/SpringValley.foot.3.0.png);
+            color: white;
+            width: 100%;
+            height:200px;
+            position: absolute;
+            background-repeat: repeat-x;
+            bottom: 0px;
+        }
+        footer p {
+            margin-top: 170px;
+            background: black;
+            text-align: center;
+            line-height: 30px;
+        }
+                    
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="backgound">
+        <div class="clouds"></div>
+        <div class="moutains"></div>
+        <div class="moutain-2"></div>
+        <div class="sea"></div>
+        <div class="fields-area">
+            <div class="fields-1"></div>
+            <div class="fields-2"></div>
+            <div class="fields-3"></div>
+            <div class="fields-4"></div>
+        </div>
+    </div>
+    <div class="content">
+        
+    </div>
+    
+    <footer>
+        <p>Powered by Project Sparrow</p>
+    </footer>
+</body>
+</html>

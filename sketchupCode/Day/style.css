@@ -1,0 +1,6 @@
+body{
+    background: url("src/back.png");
+    padding: 0px;
+    margin: 0px;
+    overflow-x:hidden;
+}
