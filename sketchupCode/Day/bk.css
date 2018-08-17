@@ -1,0 +1,94 @@
+.sky{
+    background: url("src/back.png");
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    z-index: -5;
+}
+.clouds{
+    background: url(src/clouds2.png);
+    width: 200%;
+    height: 200px;
+    position: absolute;
+    top:25%;
+    -webkit-animation: movingclouds 500s linear infinite;
+    background-repeat: repeat-x;
+    z-index: -4
+
+}
+.clouds-2{
+    background: url(src/clouds4.png);
+    width: 200%;
+    height: 200px;
+    position: absolute;
+    top:40%;
+    -webkit-animation: movingclouds 500s linear infinite;
+    background-repeat: repeat-x;
+    z-index: -2
+
+}
+@keyframes movingclouds {
+    0% {
+        left: 0%
+      }
+    100% {
+        left: -100%
+    }
+}
+.moutains{
+    background: url(src/back.6.png);
+    width: 100%;
+    height: 210px;
+    position: absolute;
+    top:36%;
+    z-index: -3
+}
+.moutain-2{
+    background: url(src/moutains.png);
+    width: 100%;
+    height: 280px;
+    position: absolute;
+    top:41%;
+    z-index: -2
+}
+.fields-1 {
+    background: url(src/bg-fields.png);
+    width: 100%;
+    float: left;
+    height: 100%;
+}
+
+.fields-area{
+    top: 45%;
+    position: absolute;
+    height: 355px;
+    width: 100%;
+    z-index: -1;
+}
+.sea{
+    background: url(src/water.png);
+    width: 100%;
+    position: fixed;
+    height: 100%;
+    bottom: 0px;
+    z-index: -6;
+}
+footer{
+    background: url(src/SpringValley.foot.3.0.png);
+    color: white;
+    width: 100%;
+    height: 200px;
+    position: relative;
+    background-repeat: repeat-x;
+    bottom: 0px;
+    z-index: 0;
+}
+footer p {
+    background: black;
+    text-align: center;
+    line-height: 20px;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+            

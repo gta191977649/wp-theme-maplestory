@@ -1,6 +1,139 @@
 body{
-    background: url("src/back.png");
     padding: 0px;
     margin: 0px;
     overflow-x:hidden;
+    font-family: "メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro";
+}
+
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.content-area {
+    width: 924px;
+    margin-left:auto;
+}
+.content-head {
+    width 100%;
+    height: 140px;
+    background-image: url(src/bg_section_list.png);
+}
+.content {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 1px;
+    background: #fef8ed;
+    margin-left: 19px;
+    margin-right: 19px;
+    border: 3px solid #dbc19a;
+    border-top: none;
+    margin-bottom: 20px;
+    min-height: 600px;
+}
+.content h1 {
+    color:#f76b01;
+    /*text-shadow: 2px 2px 5px #fbf489;*/
+    /*
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #fbf489;
+    */
+    text-shadow:
+        -2px -2px 0 #fbf489,
+        2px -2px 0 #fbf489,
+        -2px 2px 0 #fbf489,
+        2px 2px 0 #fbf489;
+}
+
+.widget-area {
+    width: 275px;
+    float: left;
+    margin-top: 150px; 
+ 
+}
+nav {
+    width: 230px;
+    padding-left: 40px;
+}
+nav a {
+    color: white;
+    text-decoration:none;
+}
+nav a:hover {
+    color: #fae537;
+    text-decoration:none;
+}
+.nav-menu-left .title {
+    /*菜单标题*/
+    position: absolute;
+    z-index: 1;
+    float: left;
+    left: 35px;
+    top: 14px;
+    width: 152px;
+    text-align: center;
+    font-weight: bold;
+    text-shadow:
+        -1px -1px 0 white,
+        1px -1px 0 white,
+        -1px 1px 0 white,
+        1px 1px 0 white;
+    color: #810400;
+    font-size: 20px;
+}
+.nav-menu-left{
+    background: url(src/bg_top.png) no-repeat right top,url(src/bg_bottom.png) no-repeat right bottom;
+    width: 220px;
+    padding: 50px 10px 66px 0;
+    position: absolute;
+}
+.nav-menu-left::after { 
+    content: '';
+    position: absolute;
+    display: block;
+    background: url(src/bg_right01.png) no-repeat 0 0;
+    width: 30px;
+    height: 122px;
+    top: 0;
+    right: 0;
+}
+
+.nav-menu-left ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    color: white;
+    font-weight: bold;
+}
+.nav-menu-left ul li {
+    padding-left: 40px;
+    background: url(src/bg_middle.png);
+    display: block;
+    position: relative;
+
+}
+.nav-menu-left ul li:hover {
+    color: #fae537;
+}
+.nav-menu-left ul a::after {
+    float: right;
+    padding-right: 38px;
+    content: " »"
+}
+
+
+.nav-menu-left li ul {
+    display: none;
+    padding: 0px;
+    margin: 0px;
+}
+.nav-menu-left li ul li{
+    background-color: transparent;
+    background: none;
+    padding-left: 20px;
+    margin: 0px;
+}
+.nav-menu-left li:hover > ul{
+    display:block;
+    
 }
