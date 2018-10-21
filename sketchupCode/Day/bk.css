@@ -10,7 +10,7 @@
     width: 200%;
     height: 200px;
     position: absolute;
-    top:25%;
+    top:28%;
     -webkit-animation: movingclouds 500s linear infinite;
     background-repeat: repeat-x;
     z-index: -4
