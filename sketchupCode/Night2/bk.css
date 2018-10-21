@@ -1,0 +1,61 @@
+.sky{
+    background: url("src/back_0.png");
+    height:820px;
+    width: 100%;
+    position: absolute;
+    z-index: -5;
+}
+.sky-bk1{
+    background: url("src/sky_bk1.png");
+    height:600px;
+    width: 100%;
+    position: absolute;
+    z-index: -4;
+} 
+.cloud{
+    background: url("src/cloud.png");
+    height:136px;
+    width: 200%;
+    top:5%;
+    position: absolute;
+    animation: movingclouds 100s linear infinite;
+    background-repeat: repeat-x;
+  
+} 
+.bk-field-1{
+    background: url("src/bk_field-1.png");
+    height:748px;
+    width: 100%;
+    position: absolute;
+    z-index: -3;
+    top:20%;
+}
+.bk-field-2{
+    background: url("src/bk_field_2.png");
+    height:458px;
+    width: 100%;
+    position: absolute;
+    z-index: -2;
+    bottom: 0px;
+    color: aliceblue;
+}
+.bk-field-3{
+    background: url("src/bk_field_3.png");
+    height:517px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    bottom: 0px;
+    color: aliceblue;
+}
+@keyframes movingclouds {
+    0% {
+        left: 0%
+      }
+    100% {
+        left: -100%
+    }
+}
+body{
+    background-color: #aaffff;
+}
