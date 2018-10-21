@@ -73,18 +73,31 @@
     bottom: 0px;
     z-index: -6;
 }
+ 
+footer-area {
+    bottom: 0px;
+}
+footer-area .props{
+    background: url(src/back_forest.png);
+    position:relative;
+    bottom: -20px;
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 332px;
+    z-index: -1;
+    
+}
 footer{
     background: url(src/SpringValley.foot.3.0.png);
     color: white;
     width: 100%;
-    height: 200px;
+    height: 198px;
     position: relative;
     background-repeat: repeat-x;
-    bottom: 0px;
-    z-index: 0;
+    
+    z-index: 1;
 }
 footer p {
-    background: black;
     text-align: center;
     line-height: 20px;
     bottom: 0;
