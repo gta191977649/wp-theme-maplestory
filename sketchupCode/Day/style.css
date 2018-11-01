@@ -3,6 +3,7 @@ body{
     margin: 0px;
     overflow-x:hidden;
     font-family: "メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","微软雅黑";
+   
 }
 .header {
 	position:relative;
@@ -113,7 +114,7 @@ nav a:hover {
     /*菜单标题*/
     position: absolute;
     z-index: 1;
-    float: left;
+   
     left: 35px;
     top: 14px;
     width: 152px;
@@ -131,7 +132,7 @@ nav a:hover {
     background: url(src/bg_top.png) no-repeat right top,url(src/bg_bottom.png) no-repeat right bottom;
     width: 220px;
     padding: 50px 10px 66px 0;
-    position: absolute;
+    position: relative;
 }
 .nav-menu-left::after { 
     content: '';
@@ -166,8 +167,6 @@ nav a:hover {
     padding-right: 38px;
     content: " »"
 }
-
-
 .nav-menu-left li ul {
     display: none;
     padding: 0px;
@@ -182,4 +181,71 @@ nav a:hover {
 .nav-menu-left li:hover > ul{
     display:block;
     
+}
+
+.widget::before  {
+    background: url(./src/board_head.png);
+    position: relative;
+    display: block;
+    height: 60px;
+    content: '';
+    width: 260px;
+}
+.widget{
+    margin-top: 30px;
+}
+.widget::after  {
+    background: url(./src/board_end.png);
+    position: relative;
+    display: block;
+    height: 10px;
+    content: '';
+    width: 260px;
+}
+.widget-body {
+    background: url(./src/board_mid.png);
+    width: 260px;
+}
+
+.widget-content {
+    /*background: url(./src/bg_tile.jpg);*/
+    width: 195px;
+    margin-left: 35px;   
+
+}
+.widget-content > * {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    overflow: hidden;
+
+}
+.widget h1 {
+    color: #810400;
+    font-size: 20px;
+    text-align: center;
+}
+
+.search {
+    float: right;
+}
+
+/* Form styles */
+
+.btn-primary {
+    border-radius: 10px;
+    background: #1da1f2;
+    border-color: #1d94dc;
+    color: white;
+    font-weight: bold;
+}
+input {
+    border-radius: 5px;
+    padding: 2px;
+    color: #810400;
+}
+
+hr {
+    background: url(./src/border_dot.png) repeat-x;
+    border: 0;
+    height: 2px;
 }
