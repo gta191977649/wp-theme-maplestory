@@ -249,3 +249,73 @@ hr {
     border: 0;
     height: 2px;
 }
+
+/* Comments */
+.comment p {
+	margin:0px;
+	padding:0px;
+}
+.comment .comment-nickname {
+	font-size:15px;
+	font-weight:bold;
+}
+.comment .comment-list {
+	font-size: 12px;
+    position: relative;
+    margin-bottom: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+.comment::before {
+	content:'';
+	display:block;
+    background: url(./src/sttl_02.png) no-repeat 0 0;
+    height: 62px;
+    margin-bottom: 0;
+}
+
+.comment .comment-body::before {
+	background: url(./src/bg_balloon_03.png) no-repeat 0 0;
+	content: '';
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 18px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: -20px;
+    margin: auto auto auto 0;
+}
+.comment .comment-body::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.comment .comment-body {
+	margin-top:20px;
+	padding: 10px 18px 20px;
+    background: #fff;
+    border: solid 2px #b99660;
+    margin-left: 50px;
+	position: relative;
+    border-radius: 20px;
+	width:100%;
+}
+.comment .comment-date {
+	position:absolute;
+	right:20px;
+}
+.comment .comment-avatar {
+    width: 80px;
+    height: 80px;
+	max-width: 50%;
+}
+.comment .comment-avatar img{
+	width: 80px;
+    height: 80px;
+	border-radius: 100%;
+}
