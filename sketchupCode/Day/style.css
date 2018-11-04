@@ -230,13 +230,36 @@ nav a:hover {
 }
 
 /* Form styles */
-
+.btn {
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:5px;
+	padding-bottom:5px;
+	border:none;
+}
+.maple-ui-win-control {
+	float:right;	
+	padding:1px;
+	margin-right:2px;
+}
+.maple-ui-win-control > * {
+	width:20px;
+	height:20px;
+	text-align:center;
+	text-decoration:none;
+	font-size:12px;
+	line-height:20px;
+}
 .btn-primary {
-    border-radius: 10px;
-    background: #1da1f2;
-    border-color: #1d94dc;
+    border-radius: 20px;
+    background: #2e7fee;
+	border: 2px solid #0066c5;
     color: white;
     font-weight: bold;
+	text-decoration:none;
+}
+.btn-primary:hover {
+    background: #0066c5;
 }
 input {
     border-radius: 5px;
@@ -263,12 +286,12 @@ hr {
 	font-size: 12px;
     position: relative;
     margin-bottom: 20px;
+}
+.comment .comment-owner {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	
 }
-
 .comment::before {
 	content:'';
 	display:block;
@@ -276,7 +299,20 @@ hr {
     height: 62px;
     margin-bottom: 0;
 }
-
+.comment .comment-reply::before {
+	content: '';
+    background: url(./src/icn_reply.png) no-repeat 0 0;
+    display: block;
+    width: 19px;
+    height: 19px;
+	padding-left:30px;
+}
+.comment .comment-reply {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left:30px;
+}
 .comment .comment-body::before {
 	background: url(./src/bg_balloon_03.png) no-repeat 0 0;
 	content: '';
@@ -289,6 +325,7 @@ hr {
     bottom: 0;
     left: -20px;
     margin: auto auto auto 0;
+
 }
 .comment .comment-body::after {
     content: "";
@@ -319,3 +356,69 @@ hr {
     height: 80px;
 	border-radius: 100%;
 }
+.comment .comment-info {
+	text-align:right;
+}
+.btn-ui-primary {
+	background-image: linear-gradient(#2c8bcb, #70c4ee);
+	color:white;
+	border: solid 1px #50565d;
+	border-radius:3px;
+	text-shadow: 0px 0px 1px #6D6D6D;
+}
+.btn-ui-primary:hover {
+	background-image: linear-gradient(#2c8bcb, #41dcee);
+}
+.btn-ui-disabled {
+	background-image: linear-gradient(#aaa298, #d2d6d6);
+	color:white;
+	border: solid 1px #50565d;
+	border-radius:3px;
+	text-shadow: 0px 0px 1px #6D6D6D;
+}
+.btn-ui-disabled:hover {
+	background-image: linear-gradient(#aaa298, #d2d6d6);
+}
+.maple-ui-window {
+	background:#a0b2ca;
+	border: solid 1px #50565d;
+	border-radius:5px;
+	margin-bottom:20px;
+}
+.maple-ui-window-header {
+	background:white;
+	border-radius:5px;
+	margin:5px;
+	padding-left:5px;
+	font-weight:bolder;
+}
+.maple-ui-window-content {
+	background: white;
+	margin-top:5px;
+	padding:10px;
+	border-top: solid 2px #707985;
+	border-bottom: solid 1px #6d7d8b;
+	box-shadow: inset 0px 0px 15px 0px rgba(204,204,204,1);
+
+}
+.maple-ui-controlwrapper {
+	text-align:right;
+	margin:5px;
+	
+}
+.maple-ui-window-content .form-control{
+	min-width:100%;
+	max-width:100%;
+	border-radius:2px;
+	border: solid 1px #abb9c3;
+	color:black;
+	box-shadow: inset 0px 0px 5px 0px rgba(204,204,204,1);
+}
+.maple-ui-window label{
+	font-size:14px;
+}
+
+.float-right {
+	float:right;
+}
+

@@ -118,31 +118,73 @@
                     </p>
 				</div>
 				<div class="comment">
+					<div class="comment-info">コメント:3</div>
 					<div class="comment-list">
-						<div class="comment-avatar"><img src="https://ja.gravatar.com/avatar/98868241a92779cac9881d2a2b1fbc57?s=500"></div>
-						<div class="comment-body">
-							<div class="comment-date"><strong>日付：</strong>十月 18, 2018</div>
-							<div class="comment-nickname">Sakura</div>
-							<hr/>
-							<div class="comment-content">
-								<p>Hello world</p>			
+						<!-- 楼主 -->
+						<div class="comment-owner">
+							<div class="comment-avatar"><img src="https://ja.gravatar.com/avatar/98868241a92779cac9881d2a2b1fbc57?s=500"></div>
+							<div class="comment-body">
+								<div class="comment-date"><strong>日付：</strong>十月 18, 2018</div>
+								<div class="comment-nickname">Sakura</div>
+								<hr/>
+								<div class="comment-content">
+									<p>新しいのテーマですね～</p>			
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="comment-list">
-						<div class="comment-avatar"><img src="https://www.gravatar.com/avatar/0248a9ef595fe01ebe3bbb9e0d676026.jpg"></div>
-						<div class="comment-body">
-							<div class="comment-date"><strong>日付：</strong>十月 18, 2018</div>
-							<div class="comment-nickname">Sparrow</div>
-							<hr/>
-							<div class="comment-content">
-								<p>bla.bla.bla</p>			
-								<p>Hello world</p>			
-								<p>Test commments</p>			
+						<!-- 回复 -->
+						<div class="comment-reply">
+							<div class="comment-avatar"><img src="http://www.gravatar.com/avatar/0248a9ef595fe01ebe3bbb9e0d676026.jpg"></div>
+							<div class="comment-body">
+								<div class="comment-date"><strong>日付：</strong>十月 18, 2018</div>
+								<div class="comment-nickname">Sparrow</div>
+								<hr/>
+								<div class="comment-content">
+									<p>そうだよｗ</p>			
+								</div>
 							</div>
 						</div>
+						<div class="comment-reply">
+							<div class="comment-avatar"><img src="http://www.gravatar.com/avatar/0248a9ef595fe01ebe3bbb9e0d676026.jpg"></div>
+							<div class="comment-body">
+								<div class="comment-date"><strong>日付：</strong>十月 18, 2018</div>
+								<div class="comment-nickname">Sparrow</div>
+								<hr/>
+								<div class="comment-content">
+									<p>いイイ感じ～</p>			
+									<p>フワフワフワフワして</p>			
+								</div>
+							</div>
+						</div>
+						<a href="#" class="btn btn-primary">返信する</a>
 					</div>
-					
+					<!-- 发布评论 -->
+					<div class="maple-ui-window">
+						<div class="maple-ui-window-header">
+							コメントを残す
+							<div class="maple-ui-win-control">
+								<a href="#" class="btn-ui-disabled float-right">X</a>
+							</div>
+						</div>
+						<form action="#" method="post" id="commentform" class="comment-form">
+							<div class="maple-ui-window-content">
+								<label for="comment">コメント: ご自由にコメント可能です。(承認制)</label>
+								<textarea id="comment" class="form-control" name="comment" rows="3"></textarea>
+								
+								<label for="author">ニックネーム</label>
+								<input style="width:100%;" id="author" name="author" class="form-control" type="text" value="" size="30">
+								
+								<label for="email">メールアドレス</label>
+								<input style="width:100%;" id="email" name="email" class="form-control" type="text" value="" size="30">
+								
+								<label for="url">サイト</label>
+								<input style="width:100%;" id="url" name="url" class="form-control" type="text" value="" size="30">
+							</div>
+							<div class="maple-ui-controlwrapper">
+								<button class="btn btn-ui-primary" type="submit">コメントを送信</button>
+							</div>
+						</form>
+					</div>
 				</div>
 			</div>
         </div>
