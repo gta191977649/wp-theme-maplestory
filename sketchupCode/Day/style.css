@@ -355,6 +355,7 @@ hr {
 	width: 80px;
     height: 80px;
 	border-radius: 100%;
+	border: solid 2px #b99660;
 }
 .comment .comment-info {
 	text-align:right;
